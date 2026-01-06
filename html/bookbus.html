@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Your Bus</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bookbus.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">BusMS</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="bookbus.html" class="active">Book Bus</a></li>
+      <li><a href="tracebus.html">Trace Bus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- TITLE -->
+<h2 class="page-title" style="color: white;">Search & Book Bus</h2>
+
+<!-- SEARCH FORM -->
+<section class="booking-section">
+  <form class="booking-form" onsubmit="return false;">
+    
+    <label>From</label>
+    <input type="text" id="from">
+
+    <label>To</label>
+    <input type="text" id="to">
+
+    <label>Date</label>
+    <input type="date" id="date">
+
+    <button onclick="searchBus()">Search Bus</button>
+  </form>
+</section>
+
+<!-- BUS CARDS (HIDDEN INITIALLY) -->
+<section class="bus-cards hidden" id="busCards">
+  <div class="bus-card">
+    <h3>Bus No: B101</h3>
+    <p>Route: Chennai → Madurai</p>
+    <p>Time: 09:00 AM</p>
+    <p>Seats Available: 12</p>
+    <button>Book Now</button>
+  </div>
+
+  <div class="bus-card">
+    <h3>Bus No: B102</h3>
+    <p>Route: Trichy → Coimbatore</p>
+    <p>Time: 11:30 AM</p>
+    <p>Seats Available: 8</p>
+    <button>Book Now</button>
+  </div>
+</section>
+
+<!-- TABLE (OPTIONAL – keep or remove) -->
+<section class="bus-table hidden" id="busTable">
+  <h3>Available Buses</h3>
+  <table>
+    <tr>
+      <th>Bus No</th>
+      <th>Route</th>
+      <th>Time</th>
+      <th>Seats</th>
+    </tr>
+    <tr>
+      <td>B101</td>
+      <td>Chennai - Madurai</td>
+      <td>09:00 AM</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>B102</td>
+      <td>Trichy - Coimbatore</td>
+      <td>11:30 AM</td>
+      <td>8</td>
+    </tr>
+  </table>
+</section>
+<script>
+  function searchBus() {
+    alert("Bus search completed (Demo)");
+  }
+</script>
+<script src="/javascript/bookbus.js"></script>
+<script src="/javascript/main.js"></script>
+
+
+</body>
+</html>

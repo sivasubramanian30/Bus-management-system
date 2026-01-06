@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trace Bus</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/tracebus.css">
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">BusMS</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="bookbus.html">Book Bus</a></li>
+      <li><a href="tracebus.html">Trace Bus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+<h2 style="color: white; text-align: center;">Trace your bus</h2>
+
+<!-- TRACE CONTAINER -->
+<div class="trace-container">
+
+  <!-- SEARCH -->
+  <div class="trace-search">
+    <input type="text" id="busNumber" placeholder="Enter Bus Number">
+    <button onclick="trackBus()">Track</button>
+  </div>
+
+  <!-- RESULT (HIDDEN INITIALLY) -->
+  <div class="trace-card hidden" id="traceResult">
+    <p><strong>Current Location:</strong> Virudhunagar</p>
+    <p><strong>Next Stop:</strong> Madurai</p>
+  </div>
+
+</div>
+
+<!--<script src="../js/tracebus.js"></script>-->
+
+
+<script src="/javascript/main.js"></script>
+
+</body>
+</html>

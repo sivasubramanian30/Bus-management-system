@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/table.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">BusMS</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="bookbus.html">Book Bus</a></li>
+      <li><a href="tracebus.html">Trace Bus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<h2 class="title" style="color: white;">Dashboard Overview</h2>
+
+<!-- DASHBOARD CARDS -->
+<div class="card-container">
+  <div class="card clickable" onclick="showTable('busTable')">
+    <p>Total Buses</p>
+    <h3>25</h3>
+  </div>
+
+  <div class="card clickable" onclick="showTable('driverTable')">
+    <p>Drivers</p>
+    <h3>18</h3>
+  </div>
+
+  <div class="card clickable" onclick="showTable('routeTable')">
+    <p>Routes</p>
+    <h3>12</h3>
+  </div>
+
+  <div class="card clickable" onclick="showTable('bookingTable')">
+    <p>Bookings</p>
+    <h3>320</h3>
+  </div>
+</div>
+
+<!-- TABLE SECTION -->
+<div class="dashboard-tables">
+
+  <!-- BUS TABLE -->
+  <div class="table-box hidden" id="busTable">
+    <h3>Bus Details</h3>
+    <table>
+      <tr><th>Bus ID</th><th>Route</th><th>Status</th></tr>
+      <tr><td>B101</td><td>Kumari - Viruthunagar</td><td>Active</td></tr>
+      <tr><td>B101</td><td>Chennai - Madurai</td><td>Active</td></tr>
+      <tr><td>B101</td><td>Madurai - Nagarkoil</td><td>Active</td></tr>
+      <tr><td>B101</td><td>Thenkasi - Kollam</td><td>Active</td></tr>
+      <tr><td>B101</td><td>Sivagangai - Thanjai</td><td>Active</td></tr>
+      <tr><td>B102</td><td>Trichy - Coimbatore</td><td>Maintenance</td></tr>
+    </table>
+  </div>
+
+  <!-- DRIVER TABLE -->
+  <div class="table-box hidden" id="driverTable">
+    <h3>Driver Details</h3>
+    <table>
+      <tr><th>Driver ID</th><th>Name</th><th>Bus</th></tr>
+      <tr><td>D01</td><td>Ravi</td><td>B101</td></tr>
+      <tr><td>D02</td><td>Kavin</td><td>B102</td></tr>
+      <tr><td>D03</td><td>Kishore</td><td>B103</td></tr>
+      <tr><td>D04</td><td>Raja</td><td>B104</td></tr>
+      <tr><td>D05</td><td>Kumar</td><td>B105</td></tr>
+    </table>
+  </div>
+
+  <!-- ROUTE TABLE -->
+  <div class="table-box hidden" id="routeTable">
+    <h3>Route Details</h3>
+    <table>
+      <tr><th>Route ID</th><th>From</th><th>To</th></tr>
+      <tr><td>R01</td><td>Chennai</td><td>Madurai</td></tr>
+      <tr><td>R01</td><td>Kumari</td><td>Virudhunagar</td></tr>
+      <tr><td>R01</td><td>Madurai</td><td>Nagarkoil</td></tr>
+      <tr><td>R01</td><td>Thenkasi</td><td>Kollam</td></tr>
+      <tr><td>R02</td><td>Trichy</td><td>Coimbatore</td></tr>
+    </table>
+  </div>
+
+  <!-- BOOKING TABLE -->
+  <div class="table-box hidden" id="bookingTable">
+    <h3>Booking Details</h3>
+    <table>
+      <tr><th>Booking ID</th><th>Passenger</th><th>Bus</th></tr>
+      <tr><td>BK01</td><td>Anand</td><td>B101</td></tr>
+      <tr><td>BK02</td><td>Ram</td><td>B101</td></tr>
+      <tr><td>BK03</td><td>Vetri</td><td>B101</td></tr>
+      <tr><td>BK04</td><td>Raju</td><td>B101</td></tr>
+      <tr><td>BK05</td><td>Vijay</td><td>B101</td></tr>
+      <tr><td>BK06</td><td>Kishor</td><td>B101</td></tr>
+      <tr><td>BK07</td><td>Velu</td><td>B101</td></tr>
+      <tr><td>BK08</td><td>Pandi</td><td>B101</td></tr>
+      <tr><td>BK09</td><td>Shanmugam</td><td>B101</td></tr>
+      <tr><td>BK10</td><td>Senthil</td><td>B101</td></tr>
+      <tr><td>BK11</td><td>Ragul</td><td>B101</td></tr>
+      <tr><td>BK12</td><td>Mani</td><td>B101</td></tr>
+      <tr><td>BK13</td><td>Suresh</td><td>B102</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<script src="/javascript/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+:root {
+  --primary: #2563EB;
+  --secondary: #0F172A;
+  --accent: #22C55E;
+  --warning: #F59E0B;
+  --bg: #F8FAFC;
+  --card: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-soft: #475569;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  border-bottom: 2px solid var(--accent);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: var(--secondary);
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-soft);
+  margin: 20px 0;
+}
+
+/* BUTTONS */
+button,
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover,
+.btn:hover {
+  background: var(--accent);
+}
+
+/* FORM CONTAINER */
+.form-container {
+  width: 320px;
+  background: var(--card);
+  padding: 25px;
+  margin: 40px auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: 
+    linear-gradient(
+      rgba(15,23,42,0.85),
+      rgba(15,23,42,0.85)
+    ),
+    url("/images/city-bus-autumn-forest-road-vehicle-motion.jpg") no-repeat center center fixed;
+
+  background-size: cover;
+  color: var(--text-dark);
+}
+
